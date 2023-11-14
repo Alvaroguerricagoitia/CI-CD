@@ -16,7 +16,8 @@ jobs:
         run: python3 main.py
 
       - name: Crear imagen Docker
-        run: docker build -t Alvaroguerricagoitia/holamundo .
+        run: docker build -t alvaroguerricagoitia/holamundo .
+
 
       - name: Probar imagen
         run: docker run Alvaroguerricagoitia/holamundo
