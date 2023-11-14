@@ -1,15 +1,14 @@
 name: Mi workflow
 
-on: push
+on:
+  push:
 
-jobs: 
+jobs:
   tareas:
     runs-on: ubuntu-latest
     steps:
-      - name: Bajar codigo
+      - name: Bajar código
         uses: actions/checkout@v4
 
-      -name: Probar codigo
+      - name: Probar código
         run: python3 main.py
-         
-        
