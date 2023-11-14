@@ -2,6 +2,8 @@ name: Mi workflow
 
 on:
   push:
+    branches:
+      - main # Puedes especificar aquí la rama en la que quieres que se active el flujo
 
 jobs:
   tareas:
@@ -15,5 +17,6 @@ jobs:
 
       - name: Crear imagen Docker
         run: docker build -t Alvaroguerricagoitia/holamundo .
+
       - name: Probar imagen
-        run : docker run Alvaroguerricagoitia/holamundo
+        run: docker run Alvaroguerricagoitia/holamundo
