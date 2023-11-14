@@ -20,10 +20,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      -
-        name: Build and push
+      
+      - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: Alvaroguerricagoitia/holamundo
+          tags: alvaroguerri/holamundo
